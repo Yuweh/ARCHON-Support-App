@@ -13,6 +13,10 @@
 		903FF27E1FB0A0F200578AE5 /* ARCHON_Support_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 903FF27C1FB0A0F200578AE5 /* ARCHON_Support_App.xcdatamodeld */; };
 		903FF2801FB0A0F200578AE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 903FF27F1FB0A0F200578AE5 /* Assets.xcassets */; };
 		903FF2831FB0A0F200578AE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 903FF2811FB0A0F200578AE5 /* LaunchScreen.storyboard */; };
+		90F5733B1FB6C417009CAF2D /* JobLevelTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5733A1FB6C417009CAF2D /* JobLevelTVC.swift */; };
+		90F5733F1FB6C89F009CAF2D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F5733E1FB6C89F009CAF2D /* Category.swift */; };
+		90F573421FB6CC52009CAF2D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F573411FB6CC52009CAF2D /* DataService.swift */; };
+		90F573441FB6CE41009CAF2D /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F573431FB6CE41009CAF2D /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		903FF27F1FB0A0F200578AE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		903FF2821FB0A0F200578AE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		903FF2841FB0A0F200578AE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F5733A1FB6C417009CAF2D /* JobLevelTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobLevelTVC.swift; sourceTree = "<group>"; };
+		90F5733E1FB6C89F009CAF2D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		90F573411FB6CC52009CAF2D /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		90F573431FB6CE41009CAF2D /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,11 @@
 		903FF2741FB0A0F200578AE5 /* ARCHON-Support-App */ = {
 			isa = PBXGroup;
 			children = (
+				90F573401FB6CC15009CAF2D /* DataService */,
+				90F573381FB6C3C1009CAF2D /* Models */,
+				90F573391FB6C3D1009CAF2D /* Views */,
+				90F573371FB6C3A7009CAF2D /* Controllers */,
 				903FF2751FB0A0F200578AE5 /* AppDelegate.swift */,
-				903FF2771FB0A0F200578AE5 /* MainVC.swift */,
 				903FF2791FB0A0F200578AE5 /* Main.storyboard */,
 				903FF27F1FB0A0F200578AE5 /* Assets.xcassets */,
 				903FF2811FB0A0F200578AE5 /* LaunchScreen.storyboard */,
@@ -65,6 +76,39 @@
 				903FF27C1FB0A0F200578AE5 /* ARCHON_Support_App.xcdatamodeld */,
 			);
 			path = "ARCHON-Support-App";
+			sourceTree = "<group>";
+		};
+		90F573371FB6C3A7009CAF2D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				903FF2771FB0A0F200578AE5 /* MainVC.swift */,
+				90F5733A1FB6C417009CAF2D /* JobLevelTVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		90F573381FB6C3C1009CAF2D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				90F5733E1FB6C89F009CAF2D /* Category.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		90F573391FB6C3D1009CAF2D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				90F573431FB6CE41009CAF2D /* CategoryCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		90F573401FB6CC15009CAF2D /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				90F573411FB6CC52009CAF2D /* DataService.swift */,
+			);
+			path = DataService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +183,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F5733B1FB6C417009CAF2D /* JobLevelTVC.swift in Sources */,
+				90F573421FB6CC52009CAF2D /* DataService.swift in Sources */,
 				903FF2781FB0A0F200578AE5 /* MainVC.swift in Sources */,
+				90F573441FB6CE41009CAF2D /* CategoryCell.swift in Sources */,
 				903FF2761FB0A0F200578AE5 /* AppDelegate.swift in Sources */,
 				903FF27E1FB0A0F200578AE5 /* ARCHON_Support_App.xcdatamodeld in Sources */,
+				90F5733F1FB6C89F009CAF2D /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
